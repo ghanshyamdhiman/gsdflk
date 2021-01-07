@@ -33,9 +33,13 @@ flask run -p 5555
 
 access in webbrowser 127.0.0.1 :5555
 
-create webscraper.py on githhub.com
+create include/webscraper.py on githhub.com
 
 git pull
+
+pip install bs4
+pip install requests
+
 
 
 
