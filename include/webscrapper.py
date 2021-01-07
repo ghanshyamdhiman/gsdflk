@@ -6,6 +6,6 @@ class LyricsScrapper:
     self.weburl = website_url
     
   def get_lyrics(self):
-    r = requests.get(URL)   
+    r = requests.get(self.weburl)   
     soup = BeautifulSoup(r.content, 'html5lib')
     return soup.prettify()
