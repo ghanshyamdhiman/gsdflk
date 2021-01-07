@@ -21,4 +21,23 @@ create init_db.py
 
 python init_db.py
 
+source ./gsdss/bin/activate
+
+git clone http://github.com/ghanshyamdhiman/gsdflk
+
+cd gsdflk
+
+expot FLASK_APP=app
+python init_db.py
+flask run -p 5555
+
+access in webbrowser 127.0.0.1 :5555
+
+create webscraper.py on githhub.com
+
+git pull
+
+
+
+
 
