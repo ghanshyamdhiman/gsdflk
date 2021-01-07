@@ -1,6 +1,6 @@
 def store_the_file(file_name):
     try:
-       f = open(file_name, mode= 'a' encoding = 'utf-8')
+       f = open(file_name, "a")
        # perform file operations
     finally:
        f.close()
