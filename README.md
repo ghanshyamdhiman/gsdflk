@@ -47,6 +47,11 @@ python webscape.py
 git config --global push.default matching
 git config --global push.default simple
 
+git add --all
+git commit -m OK
+
+git push
+
 
 
 
