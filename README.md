@@ -44,6 +44,9 @@ pip install html5lib
 cd include
 python webscape.py
 
+git config --global push.default matching
+git config --global push.default simple
+
 
 
 
