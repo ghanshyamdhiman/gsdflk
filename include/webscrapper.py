@@ -1,8 +1,11 @@
 import requests 
 from bs4 import BeautifulSoup 
-  
-URL = "http://www.values.com/inspirational-quotes"
-r = requests.get(URL) 
-  
-soup = BeautifulSoup(r.content, 'html5lib') # If this line causes an error, run 'pip install html5lib' or install html5lib 
-print(soup.prettify()) 
+
+class LyricsScrapper:
+  def __init__(self, website_url):
+    self.weburl = website_ul
+    
+  def get_lyrics(self)
+    r = requests.get(URL)   
+    soup = BeautifulSoup(r.content, 'html5lib')
+    return soup.prettify()
