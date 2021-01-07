@@ -1,4 +1,4 @@
-import webscrapper
+from webscrapper import LyricsScrapper
 
 the_url = "http://www.values.com/inspirational-quotes"
 
