@@ -39,6 +39,11 @@ git pull
 
 pip install bs4
 pip install requests
+pip install html5lib
+
+cd include
+python webscape.py
+
 
 
 
