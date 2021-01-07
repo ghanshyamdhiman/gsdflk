@@ -4,7 +4,7 @@ the_url = "http://www.values.com/inspirational-quotes"
 
 the_scrapper = LyricsScrapper(the_url)
 
-the_lyrics_data = the_scrapper.get_lyics()
+the_lyrics_data = the_scrapper.get_lyrics()
 
 def store_the_file(file_name, lyrics_data):
     try:
