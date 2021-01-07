@@ -15,6 +15,12 @@ def index():
     conn.close()
     return render_template('index.html', posts=posts)
 
+@app.route('/elastic')
+def elk_save_lyics():
+    return render_template('elastic.html')
+    
+
+
 @app.route('/<int:post_id>')
 def post(post_id):
     post = get_post(post_id)
