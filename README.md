@@ -13,3 +13,12 @@ export FLASK_APP=app
 flask run
 
 
+create template/index.html
+create template/base.html
+create static/css/style.css
+create schema.sql
+create init_db.py
+
+python init_db.py
+
+
