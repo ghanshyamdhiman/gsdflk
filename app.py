@@ -15,7 +15,7 @@ def index():
     conn.close()
     return render_template('index.html', posts=posts)
 
-@app.route('/lyrics', methods=['GET', 'POST']))
+@app.route('/lyrics', methods=['GET', 'POST'])
 def elk_save_lyics():
     search_url = request.form['search_url']
     gsd = "GSD DATA"
