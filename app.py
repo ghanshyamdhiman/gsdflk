@@ -15,9 +15,9 @@ def index():
     conn.close()
     return render_template('index.html', posts=posts)
 
-@app.route('/elastic')
+@app.route('/lyrics')
 def elk_save_lyics():
-    return render_template('elastic.html')
+    return render_template('lyrics.html')
     
 
 
