@@ -15,13 +15,17 @@ def index():
     conn.close()
     return render_template('index.html', posts=posts)
 
-@app.route('/lyrics', methods=['GET', 'POST'])
+@app.route('/lyrics')
 def elk_save_lyics():
-    search_url = request.form['search_url']
+    
     gsd = "GSD DATA"
     return render_template('lyrics.html')
     
-
+@app.route('/lyrics_search ', methods=['GET', 'POST'])
+def lyrics_search():
+    search_url = request.form['search_url']
+    gsd = "GSD DATA"
+    return render_template('lyrics.html')
 
 @app.route('/<int:post_id>')
 def post(post_id):
