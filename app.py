@@ -15,17 +15,20 @@ def index():
     conn.close()
     return render_template('index.html', posts=posts)
 
-@app.route('/lyrics')
-def elk_save_lyics():
+@app.route('/lyrics', methods = ['POST', 'GET'])
+def lyrics():
+   gsd = "GSD DATA"
+   render_template('lyrics.html')
+   if request.method == 'POST':
+      webscraping_url = request.form['search_url']
+      return redirect(url_for('success', the_url = webscraping_url))
+   else:
+      webscraping_url = request.args.get('search_url')
+      return redirect(url_for('success', the_url = webscraping_url))
     
-    gsd = "GSD DATA"
-    return render_template('lyrics.html')
-    
-@app.route('/lyrics_search ', methods=['GET', 'POST'])
-def lyrics_search():
-    search_url = request.form['search_url']
-    gsd = "GSD DATA"
-    return render_template('lyrics.html')
+@app.route('/success/<the_url>')
+def success(the_url):
+   return 'Search URL :  %s' % the_url
 
 @app.route('/<int:post_id>')
 def post(post_id):
